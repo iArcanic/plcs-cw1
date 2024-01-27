@@ -20,6 +20,12 @@ Finally, considering what I have learned now within my degree and in my own time
 
 # 2 My programming journey
 
+## 2.1 Skills before starting the degree
+
+## 2.2 Skills learned during the degree
+
+## 2.3 Skills learned in this module
+
 # 3 Applying cyber security in my programming
 
 # 4 Incorporating cyber security in future programming
