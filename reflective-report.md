@@ -24,6 +24,8 @@ Finally, considering what I have learned now within my degree and in my own time
 
 Before beginning my university studies, I had a lot of exposure to computer programming. At a very young age, I would experiment with basic HTML and CSS, with the task of creating a simple web dashboard that supported weather, calendar, and news APIs (see [Appendix 5.1](#51-link-to-html-home-dashboard-github-repository)). The aim was to come up with a dashboard that can serve as a home daily dashboard to learn basic HTML tags and CSS styles whilst also implementing third-party APIs. This was also the first project in which I became introduced to version control concepts, i.e. GitHub, and the idea of commits, cloning repositories, etc.
 
+I also have attended numerous coding boot camps that taught many programming languages. Starting with the Python one, we learned about more advanced concepts like OOP (Object-Oriented Programming) and used it to develop a space invaders-style game. OOP this instance was highly beneficial as modules like Tkinter and Pygame operated in such a way. It helped me to build upon my Python programming fundamentals, (variables, functions, loops, and so on) that I learned in school. In addition, we learned the secure concepts of OOP and how it contrasts from just typical programming – how objects are encapsulated, polymorphism of objects, and explicit use of getter and setter methods.
+
 ## 2.2 Skills learned during the degree
 
 ## 2.3 Skills learned in this module
