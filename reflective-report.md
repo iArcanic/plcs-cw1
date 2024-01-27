@@ -26,7 +26,9 @@ Before beginning my university studies, I had a lot of exposure to computer prog
 
 I also have attended numerous coding boot camps that taught many programming languages. Starting with the Python one, we learned about more advanced concepts like OOP (Object-Oriented Programming) and used it to develop a space invaders-style game. OOP this instance was highly beneficial as modules like Tkinter and Pygame operated in such a way. It helped me to build upon my Python programming fundamentals, (variables, functions, loops, and so on) that I learned in school. In addition, we learned the secure concepts of OOP and how it contrasts from just typical programming – how objects are encapsulated, polymorphism of objects, and explicit use of getter and setter methods.
 
-Java boot camps I have attended, one teaching Java concepts and the other, similar to Python in a game development environment, helped me have more of an appreciation for the consistency in coding concepts learned in other languages – the only difference in syntax structure. In these boot camps, we learned about the differences between Java and Python in terms of interaction with compilers, portability, and more. Each programming language has their respective strength and weaknesses depending on the given scenario.
+Java boot camps I have attended, one teaching Java concepts and the other, similar to Python in a game development environment, helped me have more of an appreciation for the consistency in coding concepts learned in other languages – the only difference in syntax structure. In these boot camps, we learned about the differences between Java and Python in terms of interaction with compilers, portability, and more. Each programming language has its respective strengths and weaknesses depending on the given scenario.
+
+More recently before university, specifically in sixth form (see [Appendix 5.2](#52-link-to-a-level-github-repositories)), we learned about higher-level concepts of computer science, such as data structures and their search algorithms, as well as an understanding of the different software development methodologies. Using this, for the coding project component of my A-Level, I developed an Android application that allows users to listen to music collaboratively. This was mainly in the Kotlin programming language for the backend but XML for the frontend. This project taught me many skills, furthering my knowledge in Git version control (shelving and reverting changes/commits), integrating more official enhanced APIs, collecting stakeholder feedback, using an Agile development methodology (i.e. sprints and tickets), and database concepts. As the scope of the project was massive, appropriate documentation and organisation were required, as well as thorough research into Android application architecture.
 
 ## 2.2 Skills learned during the degree
 
@@ -40,6 +42,11 @@ Java boot camps I have attended, one teaching Java concepts and the other, simil
 
 # 5.1 Link to HTML home dashboard GitHub repository
 
-[home-automation GitHub Repository](https://github.com/iArcanic/home-automation)
+- [home-automation](https://github.com/iArcanic/home-automation)
+
+## 5.2 Link to A-level GitHub repositories
+
+- [ocr-tunes](https://github.com/iArcanic/OCR-Tunes)
+- [random-question-generator](https://github.com/iArcanic/random-question-generator)
 
 # 6 References
