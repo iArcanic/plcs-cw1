@@ -43,6 +43,8 @@ Finally, the last major project that helped me learn more development skills and
 
 ## 2.3 Skills learned in this module
 
+This module has further enhanced my technical prowess and programming abilities, by mainly focusing on the Java language and the common security exploits associated when developing typical Java programs. Throughout the many lab code exercises and examples centered around tasks such as input validation, dependency updates, and parameter checking. All threats reinforced were inspired by Java CVEs (Common Vulnerabilities and Exposures) as well as general CWEs (Common Weakness Enumeration) that the CVEs arose from. Moreover, getting used to Java in a security context was highly beneficial and serves as a transferrable skill that can be applied when writing code in other programming languages. A newfound understanding of CWEs such as code injections, buffer overflows, and lack of error console logging helped me identify mitigation patterns of which I was previously unaware. This security mindset has led me to take caution in handling user inputs, third-party library functions, and code robust measures to allow for more resilience in all future projects, not just Java.
+
 # 3 Applying cyber security in my programming
 
 # 4 Incorporating cyber security in future programming
