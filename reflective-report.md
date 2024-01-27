@@ -47,6 +47,27 @@ This module has further enhanced my technical prowess and programming abilities,
 
 # 3 Applying cyber security in my programming
 
+## 3.1 Example 1 – input validation
+
+This code snippet below accepts a user on a login form. It checks the value before passing it to the subsequent authentication method.
+
+```java
+String username = request.getParameter("username");
+String password = request.getParameter("password");
+
+if(username == null || username.isEmpty()){
+  throw new ValidationException("Username cannot be empty");
+}
+
+if(password == null || password.length() < 8){
+  throw new ValidationException("Invalid password");
+}
+
+authSystem.login(username, password);
+```
+
+It first makes sure the `password` parameter is of the required length requirement, meaning that any bad or malicious data does not get sent to the authentication system. It then checks for `null` or empty to prevent any null exception errors with the backend authentication system. Furthermore, it enforces client-side password checks before reaching the necessary authentication logic. Rather, it throws custom extensions, helping developers with debugging, and informs users accordingly. This programming practice always has the underlying assumption that user inputs are inherently malicious to always break the system.
+
 # 4 Incorporating cyber security in future programming
 
 # 5 Appendices
