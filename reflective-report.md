@@ -26,6 +26,8 @@ Before beginning my university studies, I had a lot of exposure to computer prog
 
 I also have attended numerous coding boot camps that taught many programming languages. Starting with the Python one, we learned about more advanced concepts like OOP (Object-Oriented Programming) and used it to develop a space invaders-style game. OOP this instance was highly beneficial as modules like Tkinter and Pygame operated in such a way. It helped me to build upon my Python programming fundamentals, (variables, functions, loops, and so on) that I learned in school. In addition, we learned the secure concepts of OOP and how it contrasts from just typical programming – how objects are encapsulated, polymorphism of objects, and explicit use of getter and setter methods.
 
+Java boot camps I have attended, one teaching Java concepts and the other, similar to Python in a game development environment, helped me have more of an appreciation for the consistency in coding concepts learned in other languages – the only difference in syntax structure. In these boot camps, we learned about the differences between Java and Python in terms of interaction with compilers, portability, and more. Each programming language has their respective strength and weaknesses depending on the given scenario.
+
 ## 2.2 Skills learned during the degree
 
 ## 2.3 Skills learned in this module
