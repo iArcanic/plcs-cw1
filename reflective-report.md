@@ -47,9 +47,11 @@ This module has further enhanced my technical prowess and programming abilities,
 
 # 3 Applying cyber security in my programming
 
+The code snippets used to explain cyber security practices within this section are from the Android application mentioned in [2.1](#21-skills-before-starting-the-degree).
+
 ## 3.1 Example 1 – input validation
 
-This code snippet below accepts a user on a login form. It checks the value before passing it to the subsequent authentication method.
+This code snippet is from the login page. It checks the value before passing it to the subsequent authentication method.
 
 ```java
 String username = request.getParameter("username");
@@ -67,6 +69,22 @@ authSystem.login(username, password);
 ```
 
 It first makes sure the `password` parameter is of the required length requirement, meaning that any bad or malicious data does not get sent to the authentication system. It then checks for `null` or empty to prevent any null exception errors with the backend authentication system. Furthermore, it enforces client-side password checks before reaching the necessary authentication logic. Rather, it throws custom extensions, helping developers with debugging, and informs users accordingly. This programming practice always has the underlying assumption that user inputs are inherently malicious to always break the system.
+
+## 3.2 Example 2 – Parameterised SQL statements
+
+The Android application I developed required a backend connection to the database. The database I was using was SQL, meaning that it always carries a risk of SQL injection attacks.
+
+```java
+String name = request.getParameter("username");
+int age = Integer.parseInt(request.getParameter("age"));
+
+PreparedStatement stmt = con.prepareStatement("INSERT INTO users VALUES(?, ?)");
+stmt.setString(1, name);
+stmt.setInt(2, age);
+stmt.executeUpdate();
+```
+
+Initially, it requests the user's `name` and `age` parameters, parsing them to the appropriate data types. It then executes a database query via a `PreparedStatement` to add the user's supplied data securely. This means that the string cannot be manipulated or exploited by ensuring the exact string structure. Using this over normal string concatenation allows user inputs to be treated as separate parameters instead of singular inline SQL statements. It helps to maintain control over the SQL statement being sent to the database as it prevents the insertion of unintended SQL data.
 
 # 4 Incorporating cyber security in future programming
 
