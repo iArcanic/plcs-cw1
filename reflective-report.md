@@ -47,7 +47,7 @@ This module has further enhanced my technical prowess and programming abilities,
 
 # 3 Applying cyber security in my programming
 
-The code snippets used to explain cyber security practices within this section are from the Android application mentioned in [2.1](#21-skills-before-starting-the-degree).
+The code snippets used to explain cyber security practices within this section are from the Android application mentioned in [2.1](#21-skills-before-starting-the-degree). However, some code snippets are also from small POC projects that I have quickly developed to demonstrate specific security implementations.
 
 ## 3.1 Example 1 – input validation
 
@@ -70,7 +70,7 @@ authSystem.login(username, password);
 
 It first makes sure the `password` parameter is of the required length requirement, meaning that any bad or malicious data does not get sent to the authentication system. It then checks for `null` or empty to prevent any null exception errors with the backend authentication system. Furthermore, it enforces client-side password checks before reaching the necessary authentication logic. Rather, it throws custom extensions, helping developers with debugging, and informs users accordingly. This programming practice always has the underlying assumption that user inputs are inherently malicious to always break the system.
 
-## 3.2 Example 2 – Parameterised SQL statements
+## 3.2 Example 2 – parameterised SQL statements
 
 The Android application I developed required a backend connection to the database. The database I was using was SQL, meaning that it always carries a risk of SQL injection attacks.
 
@@ -85,6 +85,27 @@ stmt.executeUpdate();
 ```
 
 Initially, it requests the user's `name` and `age` parameters, parsing them to the appropriate data types. It then executes a database query via a `PreparedStatement` to add the user's supplied data securely. This means that the string cannot be manipulated or exploited by ensuring the exact string structure. Using this over normal string concatenation allows user inputs to be treated as separate parameters instead of singular inline SQL statements. It helps to maintain control over the SQL statement being sent to the database as it prevents the insertion of unintended SQL data.
+
+## 3.3 Example 3 – encrypting sensitive data
+
+When storing sensitive data, such as the user's password, robust encryption is required. Here is a short code snippet from my POC project.
+
+```java
+Key encryptionKey = KeyGenerator.getInstance("AES").generateKey();
+Cipher c = Cipher.getInstance("AES/CBC/PKCS5Padding");
+c.init(Cipher.ENCRYPT_MODE, encryptionKey);
+
+String password = "1234myP@sswd";
+byte[] encrypted = c.doFinal(password.getBytes());
+
+FileWriter fw = new FileWriter("password.txt");
+fw.write(Base64.getEncoder().encodeToString(encrypted));
+fw.close();
+```
+
+In this case, AES encryption and base64 encoding are used to securely save the password string. AES also applies symmetric key encryption, where the keys are dynamically generated each time rather than hard-coded values. It also encrypts at the last possible moment just before the password is stored in the `.txt` file.
+
+## 3.4 Example 4 – using trusted Java libraries
 
 # 4 Incorporating cyber security in future programming
 
