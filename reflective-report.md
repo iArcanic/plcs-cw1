@@ -121,6 +121,21 @@ In this code snippet, the OWASP Encoder is used to filter application inputs and
 
 # 4 Incorporating cyber security in future programming
 
+## 4.1 As a programmer
+
+In the future, in a career in software engineering, the knowledge and skills gained from this module are transferrable and therefore applicable to the approach I will take in developing applications and systems for companies.
+
+With that in mind, here are some considerations I will be taking into future development:
+
+- Any UI features and their relevant functionality and design will consider user psychology and adversarial threats.
+- Written code will take into account input validations, encryption algorithms, and SQL parameterised queries.
+- Developers or specialists with specific security mindsets will be integrated early into the application so that vulnerabilities can be patched.
+- Only trusted code libraries and official frameworks that prioritise safety implementations will be incorporated.
+
+The priority here, in this case, would be to adopt a strict security mindset at all times.
+
+## 4.2 As a programming auditor/tester
+
 # 5 Appendices
 
 ## 5.1 GitHub repositories
