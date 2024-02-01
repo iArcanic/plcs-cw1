@@ -107,6 +107,18 @@ In this case, AES encryption and base64 encoding are used to securely save the p
 
 ## 3.4 Example 4 – using trusted Java libraries
 
+Here is some logic from a small POC that I developed, it relies on a standard security framework.
+
+```java
+import org.owasp.encoder.Encode;
+
+String input = request.getParameter("query");
+String query = Encode.forJava(input);
+stmt.setString(1, query);
+```
+
+In this code snippet, the OWASP Encoder is used to filter application inputs and allows SQL injection attacks to be prevented. Rather than using custom logic that is prone to failure, leveraging existing frameworks is a much more reliable choice. In this way, developers can focus more on the application's business logic, rather than having to spend time recreating security – reducing potential mistakes and improving development progress and efficiency.
+
 # 4 Incorporating cyber security in future programming
 
 # 5 Appendices
