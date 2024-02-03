@@ -136,6 +136,17 @@ The priority here, in this case, would be to adopt a strict security mindset at 
 
 ## 4.2 As a programming auditor/tester
 
+In the context of evaluating applications, considering the previous sections, security should be the main focus of development.
+
+Therefore, here are some considerations that will apply to such a role:
+
+- Rather than just pointing out security weaknesses, I will also come up with an actionable improvement plan at a high-level abstraction level to then implement it exactly via code.
+- The security recommendations that I come up with that arise from testing will only minimally disrupt developers, seeking not to disturb their productivity.
+- I also plan to facilitate a good relationship with developers by giving constructive criticism about their code quality and practices.
+- The aim that I have is to promote a resilient code practice mindset that will propagate across all the different software development teams.
+
+Taking a more holistic but supportive view will produce a better risk remediation plan for any future threats.
+
 # 5 Appendices
 
 ## 5.1 GitHub repositories
