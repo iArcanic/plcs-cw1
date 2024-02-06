@@ -11,25 +11,25 @@ csl: harvard-imperial-college-london.csl
 
 # 1 Introduction
 
-Software vulnerabilities are a major concern in the world today. It is therefore the programmer's responsibility to consider the cybersecurity implications in the initial stages of writing code.
+Software vulnerabilities are a major concern in the world today. It is therefore the programmer's responsibility to consider the cybersecurity implications when writing code.
 
-The report is composed of three sections. First, a brief overview of my programming journey and the path it took to develop those initial skills before starting my degree, during the duration of the degree, and any new insights that I have learned recently – but with a security context in mind where applicable.
+The report has three sections. First, a brief overview of my programming journey and the path it took to develop those initial skills before starting my degree, during the duration of the degree, and any new insights that I have learned recently – but with a security context in mind where applicable.
 
 Secondly, examples of specific Java code or functionality and the relevant choices made to address any security vulnerabilities. This section will present a much more in-depth understanding of any development decisions that can lead to said vulnerabilities.
 
-Finally, considering what I have learned now within my degree and in my own time, incorporate a security mindset in my programming whilst going forward in the future based upon the reflections I have undertaken.
+Finally, considering what I have learned now within my degree and in my own time, incorporate a security mindset in my programming going forward based on my reflections.
 
 # 2 My programming journey
 
 ## 2.1 Skills before starting the degree
 
-Before beginning my university studies, I had a lot of exposure to computer programming. At a very young age, I would experiment with basic HTML and CSS, with the task of creating a simple web dashboard that supported weather, calendar, and news APIs (see [Appendix 5.1.1](#511-html-home-dashboard)). The aim was to come up with a dashboard that can serve as a home daily dashboard whilst learning basic HTML tags, CSS styles, and implementing third-party APIs. This was also the first project in which I became introduced to version control concepts, i.e. GitHub, and the idea of commits, cloning repositories, etc.
+Before beginning my university studies, I had a lot of exposure to computer programming. I experimented with basic HTML and CSS, with the task of creating a simple web dashboard that supported weather, calendar, and news APIs (see [Appendix 5.1.1](#511-html-home-dashboard)). This was also the first project in which I became introduced to version control concepts, i.e. GitHub, and the idea of commits, cloning repositories, etc.
 
-I also have attended numerous coding boot camps that taught many programming languages. Starting with the Python one, we learned about more advanced concepts like OOP (Object-Oriented Programming) and used it to develop a space invaders-style game. OOP in this instance was highly beneficial, as modules like Tkinter and Pygame operated in such a way. It helped me to build upon my Python programming fundamentals, (variables, functions, loops, and so on) that I learned in school. In addition, we learned the secure concepts of OOP – how objects are encapsulated, the polymorphism of objects, and the explicit use of getter and setter methods.
+I also attended coding boot camps that taught many programming languages, starting with Python. We learned about advanced concepts like OOP (Object-Oriented Programming) and used it to develop a space invaders-style game. OOP in this instance was highly beneficial, as modules like Tkinter and Pygame operated in such a way. It helped me to build upon my Python programming fundamentals, (variables, functions, loops, and so on) that I learned in school. In addition, we learned the secure concepts of OOP – how objects are encapsulated, the polymorphism of objects, and the explicit use of getter and setter methods.
 
-Java boot camps I have attended, helped me have more of an appreciation for the consistency in coding concepts learned in other languages – the only difference being in the syntax structure. In these boot camps, we learned about the differences between Java and Python in terms of interaction with compilers, portability, and more. Each programming language has its respective strengths and weaknesses depending on the given scenario.
+Java boot camps I have attended, helped me have more of an appreciation for the consistency in coding concepts – the only difference being in the syntax structure. In these boot camps, we learned about the differences between Java and Python in terms of interaction with compilers, portability, and more. Each programming language has its respective strengths and weaknesses depending on the given scenario.
 
-Before university (see [Appendix 5.1.2](#512-a-level-projects)), we learned about higher-level concepts of computer science, such as data structures and their search algorithms, as well as an understanding of the different software development methodologies. Using this, for the coding project component of my A-Level, I developed an Android application that allows users to listen to music collaboratively. This was mainly in the Kotlin programming language for the backend but XML for the frontend. This project taught me many skills, furthering my knowledge in Git version control (shelving and reverting changes/commits), integrating more official enhanced APIs, collecting stakeholder feedback, using an Agile development methodology (i.e. sprints and tickets), and database concepts.
+Before university (see [Appendix 5.1.2](#512-a-level-projects)), we learned about higher-level programming concepts, such as data structures, and their search algorithms, as well as an understanding of the different software development methodologies. Using this, for the coding project component of my A-Level, I developed an Android application allowing users to listen to music collaboratively. Kotlin was used for the backend but XML for UI. This project taught me many skills, furthering my knowledge in Git version control (shelving and reverting changes/commits), integrating APIs, collecting stakeholder feedback, and using an Agile development methodology (i.e. sprints and tickets).
 
 ## 2.2 Skills learned during the degree
 
@@ -37,17 +37,15 @@ The skills learned beforehand, although I knew that security concepts existed an
 
 Another big software project completed recently was a C# web application (see [Appendix 5.1.3](#513-c-web-application)) to develop a hotel and tour reservation system for a given scenario. Since the scope of the project was intricate, organisational skills were required to balance out the implementation of features with the given time constraints. This project, in conjunction with the previous ones, helped us gain further acknowledgment of software development methodologies, again this time, using Agile sprints. The project required various languages, such as JavaScript, C# of course (since it is ASP.NET), and SQL database commands. Here, a lot of security aspects had to be implemented, but many of them were quickly addressed by the default dependencies that Microsoft provides (Entity Framework Core). In essence, this just needed minimal configuration and enabling, rather than manual development.
 
-Using Python I have also taken personal time to develop small recreations of existing cybersecurity tools, such as a key logger, packet capturer, and password manager (see [Appendix 5.1.4](#514-python-cybersecurity-tools)). Using existing Python libraries for these projects explores the concept of libraries and how they modularise code reusability to build applications that are complex in functionality.
+Using Python I have also developed recreations of existing cybersecurity tools, such as a key logger, packet capturer, and password manager (see [Appendix 5.1.4](#514-python-cybersecurity-tools)). Using existing Python libraries for these projects explores the concept of libraries and how they modularise code reusability to build applications that are complex in functionality.
 
-Finally, the last major project that helped me learn more development skills and technologies was the creation of a backend database in PostgreSQL (see [Appendix 5.1.5](#515-sql-backend-database)). Databases are a huge component of application storage, so this assignment helped me to learn more about database theory such as entities, the types of relationships between them, and their relevant translation into SQL commands. Securing the application was the main part of this assignment, and for this, database roles were created along with the necessary permissions assigned to them.
+Finally, the last major project that helped me learn more development skills and technologies was the creation of a backend database in PostgreSQL (see [Appendix 5.1.5](#515-sql-backend-database)). Databases are a huge component of application storage, so I learned more about database theory such as entities and the types of relationships between them. Securing the application was also crucial, so database roles were created along with the necessary permissions for them.
 
 ## 2.3 Skills learned in this module
 
-This module has improved my programming abilities, by mainly focusing on the Java language and the common security concerns with Java. Moreover, getting used to Java in a security context was highly beneficial and serves as a transferrable skill that can be applied when writing code in other programming languages. A newfound understanding of CWEs (Common Weakness Enumeration) such as code injections, buffer overflows, and lack of error console logging helped me identify threat patterns of which I was previously unaware. This security mindset has led me to take caution in handling user inputs, third-party library functions, and robust code measures to allow for more resilience in future projects, not just in Java.
+This module has improved my programming abilities, by mainly focusing on the Java language and common security. Moreover, getting used to Java in a security context was highly beneficial and serves as a transferrable skill that can be applied when writing code in other programming languages. A newfound understanding of CWEs (Common Weakness Enumeration) such as code injections, buffer overflows, and lack of error console logging helped me identify threat patterns of which I was previously unaware. This security mindset has led me to take caution in handling user inputs, third-party library functions, and robust code measures to allow for more code resilience.
 
 # 3 Applying cyber security in my programming
-
-The code snippets used to explain cyber security practices within this section are from the Android application mentioned in [2.1](#21-skills-before-starting-the-degree). However, some code snippets are also from small POC projects that I have quickly developed to demonstrate specific security implementations.
 
 ## 3.1 Example 1 – input validation
 
@@ -68,7 +66,7 @@ if(password == null || password.length() < 8){
 authSystem.login(username, password);
 ```
 
-It first makes sure the `password` parameter is of the required length requirement, meaning that any bad or malicious data does not get sent to the authentication system. It then checks for `null` or empty to prevent any null exception errors with the backend authentication system. Furthermore, it enforces client-side password checks before reaching the necessary authentication logic. This programming practice always has the underlying assumption that user inputs are inherently malicious to always break the system.
+It first makes sure the `password` parameter is of the required length requirement, meaning that any malicious data does not get sent to authentication. It then checks for `null` or empty to prevent any null exception errors with the backend authentication system. Furthermore, it enforces client-side password checks before reaching the necessary authentication logic. This programming practice always has the underlying assumption that user inputs are always out to break the system.
 
 ## 3.2 Example 2 – parameterised SQL statements
 
@@ -125,14 +123,14 @@ In this code snippet, the OWASP Encoder is used to filter application inputs and
 
 In the future, in a career in software engineering, the knowledge and skills gained from this module are transferrable and therefore applicable to the approach I will take in developing applications and systems.
 
-With that in mind, here are some considerations I will be taking into future development:
+Therefore, here are some considerations I will be taking into future development:
 
-- Any UI features and their relevant functionality and design will consider user psychology and adversarial threats.
+- Any UI features will consider user psychology and adversarial threats.
 - Written code will take into account input validations, encryption algorithms, and SQL parameterised queries.
-- Developers or specialists with specific security mindsets will be integrated early into the application so that vulnerabilities can be patched.
+- Developers or specialists with specific security mindsets will be integrated early so that vulnerabilities can be patched.
 - Only trusted code libraries and official frameworks that prioritise safety implementations will be incorporated.
 
-The priority here, in this case, would be to adopt a strict security mindset at all times.
+The priority would be to adopt a strict security mindset at all times.
 
 ## 4.2 As a programming auditor/tester
 
@@ -173,5 +171,3 @@ Taking a more holistic but supportive view will produce a better risk remediatio
 ### 5.1.5 SQL backend database
 
 - [im-cw1](https://github.com/iArcanic/im-cw1)
-
-# 6 References
